@@ -6,16 +6,19 @@ export async function POST(req: Request) {
   const fid = body?.untrustedData?.fid;
   const username = body?.untrustedData?.username;
 
-  console.log("FID:", fid, "USER:", username);
+  console.log("FID:", fid, "USERNAME:", username);
 
   return NextResponse.json({
     frame: {
-      image: "https://placehold.co/600x400/png?text=Hello+BasedCheck",
+      image: "https://placehold.co/600x400/png?text=Connect+Base",
       buttons: [
         {
-          label: "Next",
+          label: "Connect Wallet",
+          action: "link",
+          target: "https://basedcheck.vercel.app/connect",
         },
       ],
     },
   });
 }
+

@@ -11,7 +11,8 @@ export const metadata = {
 export default function FramePage() {
   return (
     <div style={{ padding: 40 }}>
-      BasedCheck — Farcaster × Base Mini App
+      BasedCheck — Farcaster × Base
     </div>
   );
 }
+
